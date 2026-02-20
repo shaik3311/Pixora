@@ -13,16 +13,16 @@ const NavBar = () => {
     // Handling search input 
     const searchHandler = (e)=>{
         e.preventDefault();
+
         dispatch(setQuery(searchText));
         // console.log(`Searched text is : ${searchText}`);
-        
     }
     // console.log(useSelector((state)=>state.search.query));
 
   return (
     <div className='flex flex-col justify-start items-start px-3 py-3 w-screen 
     lg:flex-row lg:justify-between lg:items-center lg:px-6 lg:py-5 
-    bg-white shadow-sm'>
+    bg-white shadow-sm sticky top-0'>
 
         <div className='flex justify-between items-center w-full lg:w-1/3 py-2'>
             
